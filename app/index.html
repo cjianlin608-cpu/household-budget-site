@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小家账本 · 家庭月度预算管家</title>
+<meta name="description" content="小家账本：为一家三口做的月度预算工具——记账、分类预算、储蓄目标，数据只存在本机浏览器，离线也能用。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#/">
+      <span class="brand-mark" aria-hidden="true">¥</span>
+      <span class="brand-text"><strong>小家账本</strong><small>一家三口的月度预算管家</small></span>
+    </a>
+    <nav class="mainnav" aria-label="主导航">
+      <a href="#/" data-nav="overview">总览</a>
+      <a href="#/transactions" data-nav="transactions">记账</a>
+      <a href="#/budgets" data-nav="budgets">预算</a>
+      <a href="#/goals" data-nav="goals">储蓄目标</a>
+    </nav>
+    <span class="month-badge" id="month-badge">2026 年 11 月</span>
+  </div>
+</header>
+
+<main class="wrap" id="app" aria-live="polite">
+  <!-- 各页由 app.js 渲染 -->
+</main>
+
+<footer class="wrap footer">
+  <p>小家账本 · 数据只保存在本机浏览器（localStorage），不上传、不联网，离线也能用。示例数据是一家三口 2026 年 11 月的真实感账本，可随时清空、恢复或导出 CSV。</p>
+  <p class="footer-links">
+    <a href="#/">总览</a> · <a href="#/transactions">记账</a> · <a href="#/budgets">预算</a> · <a href="#/goals">储蓄目标</a>
+  </p>
+</footer>
+
+<script src="data.js"></script>
+<script src="store.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
